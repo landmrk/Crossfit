@@ -159,6 +159,10 @@
 		display: block;
 		margin: 20px auto;
 	}
+	
+	.qr {
+		display: none;
+	}
 
 	&:after {
 		content: "";
@@ -174,6 +178,11 @@
 
 @media only screen and (min-width: 680px) {
 	#page-main {
+		.qr {
+			display: block;
+			margin: 0 auto;
+		}
+		
 		&:after {
 			display: none;
 		}
