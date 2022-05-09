@@ -24,7 +24,7 @@
 		opacity:1;
 		animation:PreloaderFadeOut ease-in 1;
 		animation-fill-mode:forwards;
-		animation-duration:1s;
+		animation-duration:0.8s;
 		animation-delay: 1.5s
 	}
 }
@@ -33,7 +33,7 @@
 
 #map {
 	grid-area: map;
-	min-height: 600px;
+	min-height: calc(100vh - 70px);
 
 	.ta-logo {
 		position: absolute;
