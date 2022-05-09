@@ -11,7 +11,7 @@ map.on('load', function() {
   // from GL JS's use in the added source. You can use any request method (library
   // or otherwise) that you want.
   d3.json(
-    'https://sheets.googleapis.com/v4/spreadsheets/1opFPe_w7wU2PMkAWtsvbNWHvZtxzMjM7l2pxne3Qswc/values/Locations?alt=json&key=AIzaSyAxoum5Sl8ZK88X8Yjj6LgLi6qV2Dgb_dA',
+    'https://sheets.googleapis.com/v4/spreadsheets/1opFPe_w7wU2PMkAWtsvbNWHvZtxzMjM7l2pxne3Qswc/values/Locations?alt=json&key=AIzaSyAYrQQUw01rNbL6J58m0PyC9v8j7MX3jaM',
     function(err, data) {
 
       const { route,
