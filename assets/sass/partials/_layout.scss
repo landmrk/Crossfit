@@ -1,0 +1,290 @@
+/* ----- Preloader ----- */
+
+@keyframes PreloaderFadeOut {
+	from {
+		opacity:1;
+	}
+	to {
+		opacity:0;
+		visibility: hidden;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+#preloader {
+		background: #000 url(../imgs/splash-bg.jpeg) no-repeat center;
+		background-size: cover;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 999;
+		width: 100%;
+		opacity:1;
+		animation:PreloaderFadeOut ease-in 1;
+		animation-fill-mode:forwards;
+		animation-duration:1s;
+		animation-delay: 1.5s
+	}
+}
+
+/* ----- Map ----- */
+
+#map {
+	grid-area: map;
+	min-height: 600px;
+
+	.ta-logo {
+		position: absolute;
+		bottom: 40px;
+		right: 20px;
+		z-index: 99;
+		width: 100px;
+		height: auto;
+	}
+
+	.mapboxgl-ctrl-bottom-left .mapboxgl-ctrl {
+		margin-left: 30px !important;
+	}
+
+	.mapboxgl-popup-content {
+		color: #1D1D1B;
+		padding: 20px 15px;
+		border-radius: 5px;
+		box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2);
+		text-align: center;
+
+		strong {
+			margin-bottom: 15px;
+			display: block;
+		}
+
+		a,
+		a:visited {
+			color: #1D1D1B;
+			text-decoration: underline;
+		}
+	}
+}
+
+@media only screen and (min-width: 680px) {
+	#map {
+		.ta-logo {
+			position: absolute;
+			right: 40px;
+			z-index: 99;
+			width: 140px;
+		}
+
+		&:after {
+			content: "";
+			background: linear-gradient(173.53deg, #009F3B -1.43%, #E8E300 48.58%, #E42320 101.83%);
+			width: 10px;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 99;
+		}
+	}
+}
+
+/* ----- Page ----- */
+
+@media only screen and (min-width: 680px) {
+	.container {
+		display: grid;
+		grid-template-columns: 300px auto;
+		grid-template-rows: 86px auto 70px;
+		height: 100vh;
+		grid-template-areas:
+	    "header map"
+	    "content map"
+	    "footer footer";
+	}
+}
+
+/* ----- Page Header ----- */
+
+#page-header {
+	grid-area: header;
+	background-color: #000;
+	position: relative;
+
+	.donate {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid #E5321E;
+		padding: 20px;
+
+		a,
+		a:visited {
+			width: 80%;
+			display: block;
+			margin: 0 10px;
+		}
+
+		.jg-logo {
+			width: 120px;
+
+			svg {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+/* ----- Page Main ----- */
+
+#page-main {
+	grid-area: content;
+	background-color: #000000;
+	padding: 20px;
+	text-align: center;
+	position: relative;
+
+	.crossfit-logo {
+		width: 100%;
+		max-width: 260px;
+		display: block;
+		margin: 0 auto 20px;
+	}
+
+	.filter-placeholder {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: 20px auto;
+	}
+
+	&:after {
+		content: "";
+		background: linear-gradient(173.53deg, #009F3B -1.43%, #E8E300 48.58%, #E42320 101.83%);
+		width: 100%;
+		height: 10px;
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+		z-index: 1;
+	}
+}
+
+@media only screen and (min-width: 680px) {
+	#page-main {
+		&:after {
+			display: none;
+		}
+	}
+}
+
+/* ----- Page Footer ----- */
+
+#page-footer {
+	grid-area: footer;
+	width: 100%;
+
+	.copyright {
+		background-color: #1D1D1B;
+		text-align: center;
+		width: 100%;
+		font-size: calc(12 / 16) + 0em;
+		height: 70px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 10px 20px;
+
+		a,
+		a:visited {
+			margin: 0 5px;
+			text-decoration: underline;
+		}
+	}
+
+	.counter {
+		background-color: #E5321E;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 20px;
+
+		div[class^='counter__'] {
+			text-align: center;
+			margin: 0 30px;
+
+			h4 {
+				font-size: calc(16 / 16) + 0em;
+			}
+
+			span {
+				font-size: calc(18 / 16) + 0em;
+			}
+		}
+	}
+
+	.ta-button {
+		background-color: #E5321E;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+	}
+
+	.share {
+		background-color: #1D1D1B;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px 20px 0;
+
+		h4 {
+			margin-right: 10px;
+		}
+	}
+}
+
+@media only screen and (min-width: 680px) {
+	#page-footer {
+		width: 100vw;
+		display: grid;
+		grid-template-columns: 300px auto auto auto;
+
+		.copyright {
+			grid-column-start: 1;
+			grid-row-start: 1;
+		}
+
+		.counter {
+			grid-column-start: 2;
+			justify-content: flex-start;
+			flex-wrap: nowrap;
+			padding: 0 20px;
+		}
+
+		.ta-button {
+			align-items: center;
+			justify-content: flex-end;
+			padding: 0 20px;
+		}
+
+		.share {
+			padding: 0 20px;
+			justify-content: flex-start;
+
+			h4 {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+/* ----- Share ----- */
+
+#st-1 {
+	z-index: 998 !important;
+}
