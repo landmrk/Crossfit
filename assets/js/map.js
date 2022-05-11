@@ -22,11 +22,11 @@ map.on('load', function() {
       if (err) throw err;
       
       // set metadata
-      // localStorage.setItem('metadata', metadata);
-      // const { daysRemaining, justGiving, distanceRan } = metadata;
-      // document.getElementById('daysRemaining').innerHTML = daysRemaining;
-      // document.getElementById('justGiving').innerHTML = justGiving;
-      // document.getElementById('distanceRan').innerHTML = distanceRan;
+      localStorage.setItem('metadata', metadata);
+      const { daysRemaining, justGiving, distanceRan } = metadata;
+      document.getElementById('daysRemaining').innerHTML = daysRemaining;
+      document.getElementById('justGiving').innerHTML = justGiving;
+      document.getElementById('distanceRan').innerHTML = distanceRan;
 
       // save full coordinate list for later
       const { coordinates } = reachedRoute.features[0].geometry;
