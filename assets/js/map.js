@@ -2,7 +2,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibGFuZG1yayIsImEiOiJjajV1dzZqemkxczA2MndxdHZrN
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/landmrk/ckcd73d8e7sca1imtabjdx8hr',
-  zoom: 8,
+  zoom: 5,
   center: [-0.1278, 51.5074],
   pitch: 1
 });
@@ -82,7 +82,7 @@ map.on('load', function() {
       // setup the viewport
       map.jumpTo({
         'center': routeInit[1],
-        'zoom': 8
+        'zoom': 5
       });
       map.setPitch(1);
 
