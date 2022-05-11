@@ -146,7 +146,7 @@ function setmapFacts(mapFacts) {
         //var description = e.features[0].properties.description;
 
         const { figure, icon, poi, location } = e.features[0].properties;
-        const copy = `<h4 style="margin-bottom:5px">Famous Person</h4> <p>${icon}</p><h4 style="margin-bottom:5px">Location</h4> <p>${location}</p> <h4 style="margin-bottom:5px">Point of Interest</h4> <p><a href="${figure}" target="_blank">${poi}</a></p> <strong style="color:#50C9A4">#burnleyyoungpeopletogether</strong>`;
+        const copy = `<h4 style="margin-bottom:5px">Famous Person</h4> <p>${icon}</p><h4 style="margin-bottom:5px">Location</h4> <p>${location}</p> <h4 style="margin-bottom:5px">Point of Interest</h4> <p><a href="${figure}" target="_blank">${poi}</a></p>`;
 
         // Ensure that if the map is zoomed out such that multiple
         // copies of the feature are visible, the popup appears
