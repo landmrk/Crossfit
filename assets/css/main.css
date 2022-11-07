@@ -455,18 +455,12 @@ a, a:visited {
   }
 
   .copyright {
-    background-color: #fff;
     text-align: center;
     width: 100%;
     font-size: .75em;
     height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     padding: 10px 40px;
-    grid-column-start: 1;
-    grid-row-start: 1
+    display: block;
   }
 }
 
