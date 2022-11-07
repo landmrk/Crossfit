@@ -346,17 +346,17 @@ a, a:visited {
   .container {
     display: grid;
     grid-template-columns: 33vw auto;
-    grid-template-rows: 86px auto 70px;
+    grid-template-rows: auto 70px;
     height: 100vh;
-    grid-template-areas: "header map""content map""footer footer"
+    grid-template-areas: "content map""content footer"
   }
 }
 
-#page-header {
+/* #page-header {
   grid-area: header;
   background-color: #fff;
   position: relative
-}
+} */
 
 /* #page-header .donate {
   display: flex;
@@ -422,6 +422,10 @@ a, a:visited {
   z-index: 1
 }
 
+.copyright {
+  display: none;
+}
+
 @media only screen and (min-width: 680px) {
   #page-main {
     display: block;
@@ -430,14 +434,16 @@ a, a:visited {
     padding: 20px 40px;
     text-align: center;
     position: relative;
+    height: 100vh;
+    overflow: auto;
   }
 
-  #page-main .landmrk-logo {
+  /* #page-main .landmrk-logo {
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
     bottom: 10px
-  }
+  } */
 
   #page-main .qr {
     display: block;
@@ -447,15 +453,26 @@ a, a:visited {
   #page-main:after {
     display: none
   }
+
+  .copyright {
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: .75em;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 40px;
+    grid-column-start: 1;
+    grid-row-start: 1
+  }
 }
 
 #page-footer {
   grid-area: footer;
   width: 100%
-}
-
-#page-footer .copyright {
-  display: none;
 }
 
 #page-footer .copyright a, #page-footer .copyright a:visited {
@@ -512,27 +529,6 @@ a, a:visited {
 }
 
 @media only screen and (min-width: 680px) {
-  #page-footer {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 33vw auto;
-  }
-
-  #page-footer .copyright {
-    background-color: #fff;
-    text-align: center;
-    width: 100%;
-    font-size: .75em;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 10px 40px;
-    grid-column-start: 1;
-    grid-row-start: 1
-  }
-
   #page-footer .counter {
     grid-column-start: 2;
     justify-content: center;
