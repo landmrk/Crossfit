@@ -159,11 +159,11 @@
 		display: block;
 		margin: 20px auto;
 	}
-	
+
 	.qr {
 		display: none;
 	}
-	
+
 	.ta-doug-img {
 		width: 100%;
 		max-width: 260px;
@@ -186,17 +186,17 @@
 @media only screen and (min-width: 680px) {
 	#page-main {
 		padding: 20px 20px 50%;
-		
+
 		.crossfit-logo {
 			position: absolute;
 			bottom: 10px;
 		}
-		
+
 		.qr {
 			display: block;
 			margin: 0 auto;
 		}
-		
+
 		&:after {
 			display: none;
 		}
