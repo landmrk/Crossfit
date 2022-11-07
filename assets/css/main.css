@@ -283,7 +283,7 @@ a, a:visited {
 }
 
 #map {
-  min-height: calc(100vh - 140px);
+  min-height: calc(90vh - 140px);
 }
 
 #map .ta-logo {
