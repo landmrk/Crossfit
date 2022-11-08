@@ -321,7 +321,7 @@ a, a:visited {
   #map {
     grid-area: map;
     min-height: calc(100vh - 70px);
-    border: 5px solid #009F3B;
+    border: 5px solid #068136;
   }
 
   #map .ta-logo {
@@ -475,7 +475,7 @@ a, a:visited {
 }
 
 #page-footer .counter {
-  background-color: #009F3B;
+  background-color: #068136;
   display: flex;
   align-items: center;
   justify-content: center;
