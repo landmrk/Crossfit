@@ -3,7 +3,7 @@ var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/landmrk/ckcd73d8e7sca1imtabjdx8hr',
   zoom: 5,
-  center: [-0.1278, 51.5074],
+  center: [-16.500225, 16.025683],
   pitch: 1
 });
 
@@ -20,7 +20,7 @@ map.on('load', function() {
       mapFacts,
       metadata } = data;
       if (err) throw err;
-      
+
       // set metadata
       localStorage.setItem('metadata', metadata);
       const { daysRemaining, justGiving, distanceRan } = metadata;
