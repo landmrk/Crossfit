@@ -509,19 +509,14 @@ a, a:visited {
 }
 
 .ta-button {
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px
 }
 
-#page-footer .share {
-  background-color: #1d1d1b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 20px 0;
+.share {
+  margin: 20px auto 30px;
 }
 
 #page-footer .share h4 {
@@ -544,7 +539,6 @@ a, a:visited {
   }
 
   #page-footer .share {
-    padding: 0 20px;
     justify-content: flex-start
   }
 

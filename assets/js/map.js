@@ -74,7 +74,7 @@ map.on('load', function() {
           'line-join': 'round'
         },
         'paint': {
-          'line-color': '#008ACD',
+          'line-color': '#DB1B22',
           'line-opacity': 1,
           'line-width': 6        }
       });
