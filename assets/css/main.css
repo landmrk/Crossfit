@@ -260,6 +260,12 @@ a, a:visited {
   border: 1px solid #1d1d1b
 }
 
+.btn.btn-green {
+  background: linear-gradient(180deg, #098136 0%, #096A2D 100%);
+  color: white !important;
+  border: 1px solid #098136
+}
+
 @-webkit-keyframes PreloaderFadeOut {
   from {
     opacity: 1
