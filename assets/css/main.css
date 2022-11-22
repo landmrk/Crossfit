@@ -556,6 +556,7 @@ a, a:visited {
   height: 40px!important;
   line-height: 40px!important;
   padding: 0 10px!important;
+  margin: 10px 0!important;
 }
 
 #st-1 .st-btn > img { 
