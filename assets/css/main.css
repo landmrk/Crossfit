@@ -550,3 +550,15 @@ a, a:visited {
 #st-1 {
   z-index: 998 !important
 }
+
+
+#st-1 .st-btn {
+  height: 40px!important;
+  line-height: 40px!important;
+  padding: 0 10px!important;
+}
+
+#st-1 .st-btn > img { 
+  height: 25px!important;
+  width: 25px!important;
+}
